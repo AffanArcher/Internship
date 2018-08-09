@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<body background="PlainWallpaper.jpg">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+<style>
+.mySlides {display:none}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="file:///C:/Users/User/Desktop/Bakery%20store/Product/product.html">Product</a></li>
+  <li><a href="file:///C:\Users\Affan\Desktop\Bakery store\gallery.html">Gallery</a></li>
+  <li><a href="file:///C:\Users\Affan\Desktop\Bakery store\About us\About us .html">About</a></li>
+  <li class="right"><a href="file:///C:/Users/User/Desktop/Bakery%20store/Register/Register%20.html">Sign Up</a></li>
+  <li class="right"><a href="file:///C:/Users/User/Desktop/Bakery%20store/sign%20in/sign%20in%20.html">Sign In</a></li>
+</ul>
+
+<div class="w3-container w3-brown">
+  <h1>The Bakery Store</h1>
+  <p>Here at Simple Sweets Bakery, we make all kinds of baked goods, ranging from the simple, fresh baked cookie to the elaborate elegance of wedding cakes. Our selection is regularly changed to keep it from "going stale", so to speak. So stop by often to see what new and exciting treats we have to offer! 
+
+ Don't forget to like us on Facebook!</p>
+</div>
+
+<div class="w3-row-padding">
+
+<div class="w3-third">
+  <h2>Cakes</h2>
+  <p>A taste for every guest! Cakes by the slice are perfect solution
+  for guest who have different cake favourites. They also make a great 
+  treat and dinner dessert when you don't want to buy an entire cake.</p>
+</div>
+
+<div class="w3-third">
+  <h2>Cookies</h2>
+  <p>From a fancy italian cookie assortment to chocolate chip to multiple
+  varieties of biscotti, you'll never be short of some of the greatest additions 
+  for parties or dinner guests!</p>
+</div>
+
+<div class="w3-third">
+  <h2>Treats</h2>
+  <p>We offer a huge range of delicacies, all faithfully recreated daily from Kim's original recipes
+  and baked on site using only finest ingredients </p>
+ 
+</div>
+
+</div>
+
+<hr><center>Whats New </center></hr>
+
+<div class="w3-content w3-section" style="max-width:500px">
+<p>Wellcome to the Bakery Store. We are much more than just an ordinary bakery. Our products are all handmades from scratch,
+and we use only quality ingredients.Tempting and tantilizing and beyond, using Kim's san original recipe.</p>
+
+<img class="mySlides w3-animate-fading" src="Slideshow.jpg" style="width:100%">
+<img class="mySlides w3-animate-fading" src="Slideshow2.jpg" style="width:90%">
+<img class="mySlides w3-animate-fading" src="Slideshow3.jpg" style="width:90%">
+<img class="mySlides w3-animate-fading" src="Slideshow4.jpg" style="width:110%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
+
+
+</body>
+</html>
+</html>
